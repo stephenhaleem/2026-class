@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Dashboard</h1>
+<button onclick="logout()">Logout</button>
+
+<h3>Create Post</h3>
+<input id="title" placeholder="Title">
+<textarea id="content" placeholder="Content"></textarea>
+<input type="file" id="image">
+<button onclick="createPost()">Post</button>
+
+<h3>My Posts</h3>
+<div id="my-posts"></div>
+
+<script src="https://unpkg.com/@supabase/supabase-js"></script>
+<script src="app.js"></script>
+</body>
+</html>
